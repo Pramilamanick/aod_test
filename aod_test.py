@@ -155,18 +155,18 @@ def home():
         else:
                 AQI="PM25message";
         st.success(("Air Quality Index (AQI) Value {} ".format(AQI)))
-	if(AQI>=0 annd AQI<=50):
-		st.success("Air Quality is GOOD")
+        if(AQI>=0 annd AQI<=50):
+        	st.success("Air Quality is GOOD")
 	elif(AQI>50 annd AQI<=100):
-		st.success("Air Quality is MODERATE")
+        	st.success("Air Quality is MODERATE")
 	elif(AQI>100 annd AQI<=150):
-		st.success("Air Quality is UNHEALTHY FOR SENSITIVE GROUPS")
+        	st.success("Air Quality is UNHEALTHY FOR SENSITIVE GROUPS")
 	elif(AQI>150 annd AQI<=200):
-		st.success("Air Quality is UNHEALTHY FOR PEOPLE")
+        	st.success("Air Quality is UNHEALTHY FOR PEOPLE")
 	elif(AQI>200 annd AQI<=300):
-		st.success("Air Quality is VERY UNHEALTHY FOR PEOPLE")
+        	st.success("Air Quality is VERY UNHEALTHY FOR PEOPLE")
 	else:
-		st.success("Air Quality is HAZARDOUS")	
+        	st.success("Air Quality is HAZARDOUS")	
         phi = user_lat
         longitude = user_lon
         tz = -7
